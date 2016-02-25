@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="achorListVeic" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TCadVeiculoCtrl">
+   <children>
+      <Pane fx:id="paneBtnVeic" layoutX="8.0" layoutY="14.0" prefHeight="112.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <Button fx:id="btnCadVeic" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnShowDisplayAddVeiculo" prefHeight="97.0" prefWidth="98.0" text="Incluir" />
+            <Button fx:id="btnEditVeic" layoutX="107.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnEditarVeiculo" prefHeight="97.0" prefWidth="98.0" text="Editar" />
+            <Button fx:id="btnDelVeic" layoutX="211.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnExcluiVeiculo" prefHeight="97.0" prefWidth="98.0" text="Excluir" />
+            <Button fx:id="btnCadSair" layoutX="578.0" layoutY="5.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="sair" />
+            <TextField fx:id="txtBuscaVeic" layoutX="353.0" layoutY="78.0" prefHeight="25.0" prefWidth="222.0" promptText="Digite sua busca" />
+            <Button fx:id="btnBuscaVeic" layoutX="584.0" layoutY="78.0" mnemonicParsing="false" text="buscar" />
+            <MenuButton fx:id="mbSelectVeiculo" layoutX="353.0" layoutY="44.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="222.0">
+              <items>
+                <MenuItem fx:id="miSelectPlacaVeiculo" mnemonicParsing="false" text="Placa" />
+                <MenuItem fx:id="miSelectProprietario" mnemonicParsing="false" text="Proprietario" />
+              </items>
+            </MenuButton>
+         </children>
+      </Pane>
+      <Pane fx:id="paneListVeic" layoutX="8.0" layoutY="132.0" prefHeight="422.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <TableView fx:id="tbvVeiculos" prefHeight="422.0" prefWidth="653.0">
+              <columns>
+                <TableColumn fx:id="tcIdVeic" prefWidth="75.0" text="Cod." />
+                <TableColumn fx:id="tcPlacaVeic" prefWidth="75.0" text="Placa" />
+                  <TableColumn fx:id="tcMarcaVEic" prefWidth="137.0" text="Marca" />
+                  <TableColumn fx:id="tcModeloVeic" prefWidth="122.0" text="Modelo" />
+                  <TableColumn fx:id="tcPropVeiculo" prefWidth="243.0" text="Proprietario" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

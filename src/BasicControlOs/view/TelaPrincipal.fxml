@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="panePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TPrincipalCtrl">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menuCadGeral" mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="miCadVeiculo" mnemonicParsing="false" onAction="#miCadVeiculoAction" text="Veiculo" />
+                  <MenuItem fx:id="miCadItem" mnemonicParsing="false" onAction="#miCadItemAction" text="Peça" />
+                  <MenuItem fx:id="miCadForec" mnemonicParsing="false" onAction="#miCadFornecAction" text="Fornecedores" />
+                  <MenuItem fx:id="miCadServico" mnemonicParsing="false" onAction="#miCadServicoAction" text="Servico" />
+                  <MenuItem fx:id="miCadOs" mnemonicParsing="false" onAction="#miCadOSAction" text="Ordem Servico" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Relatórios">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

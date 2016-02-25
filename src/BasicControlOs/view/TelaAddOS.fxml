@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="achoInsertOS" prefHeight="624.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TAddOSCtrl">
+   <children>
+      <Pane fx:id="paneInsertOS" prefHeight="624.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="136.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inclusão de Ordem de Serviço - Cadastro">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneIncVeicOS" layoutX="7.0" layoutY="62.0" prefHeight="71.0" prefWidth="787.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Nome :" />
+                  <TextField fx:id="txtNomeVeicOS" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="214.0" />
+                  <Label layoutX="238.0" layoutY="14.0" text="Placa :" />
+                  <TextField fx:id="txtIncPlacaVeicOS" layoutX="238.0" layoutY="36.0" prefHeight="25.0" prefWidth="142.0" />
+                  <Label layoutX="392.0" layoutY="14.0" text="Marca :" />
+                  <TextField fx:id="txtMarcaVeicOS" layoutX="392.0" layoutY="36.0" prefHeight="25.0" prefWidth="134.0" />
+                  <TextField fx:id="txtModVeicOS" layoutX="537.0" layoutY="36.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Label layoutX="537.0" layoutY="14.0" text="Modelo :" />
+                  <Button fx:id="btnBuscaVeicOS" layoutX="711.0" layoutY="9.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="62.0" text="Incluir" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneListServOS" layoutX="7.0" layoutY="139.0" prefHeight="202.0" prefWidth="787.0" style="-fx-border-color: black;">
+               <children>
+                  <Button fx:id="btnIncludeServOS" layoutX="8.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Incluir" />
+                  <TableView fx:id="tbvListServOS" layoutX="2.0" layoutY="38.0" prefHeight="163.0" prefWidth="784.0">
+                    <columns>
+                      <TableColumn fx:id="tcCodServOS" prefWidth="96.0" text="Codigo" />
+                      <TableColumn fx:id="tcDescServOS" prefWidth="621.0" text="Descrição" />
+                        <TableColumn fx:id="tcValorServOS" maxWidth="1.7976931348623157E308" prefWidth="69.0" text="Valor " />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnRemoveServOS" layoutX="89.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="remover" />
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="348.0" prefHeight="202.0" prefWidth="787.0" style="-fx-border-color: black;">
+               <children>
+                  <Button fx:id="btnIncludeItem" layoutX="8.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Incluir" />
+                  <TableView fx:id="tbvListItemOS" layoutX="2.0" layoutY="38.0" prefHeight="163.0" prefWidth="784.0">
+                     <columns>
+                        <TableColumn fx:id="tcCodItemOS" prefWidth="79.0" text="Codigo" />
+                        <TableColumn fx:id="tcDescItemOS" prefWidth="336.0" text="Descrição" />
+                        <TableColumn fx:id="tcPrecoItemOS" maxWidth="1.7976931348623157E308" prefWidth="123.0" text="Preço" />
+                        <TableColumn fx:id="tcMarcaItemOS" prefWidth="323.0" text="Marca" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btnRemoveItemOS" layoutX="89.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="remover" />
+               </children>
+            </Pane>
+            <Button fx:id="btnIncludeOS" layoutX="6.0" layoutY="556.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="Incluir" />
+            <Button fx:id="btnLimparOS" layoutX="80.0" layoutY="556.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="69.0" text="Limpar" />
+            <Button fx:id="btnSairIncOS" layoutX="732.0" layoutY="557.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="Sair" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

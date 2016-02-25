@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="achorListOS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TCadOSCtrl">
+   <children>
+      <Pane fx:id="paneBtnOS" layoutX="8.0" layoutY="14.0" prefHeight="112.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <Button fx:id="btnCadOS" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="98.0" text="Incluir" />
+            <Button fx:id="btnEditOS" layoutX="107.0" layoutY="7.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="98.0" text="Editar" />
+            <Button fx:id="btnDelOS" layoutX="211.0" layoutY="7.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="98.0" text="Excluir" />
+            <Button fx:id="btnCadSairOS" layoutX="578.0" layoutY="5.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="sair" />
+            <TextField fx:id="txtBuscaOs" layoutX="353.0" layoutY="78.0" prefHeight="25.0" prefWidth="222.0" promptText="Digite sua busca" />
+            <Button fx:id="btnBuscaOS" layoutX="584.0" layoutY="78.0" mnemonicParsing="false" text="buscar" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneListOS" layoutX="8.0" layoutY="132.0" prefHeight="422.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <TableView fx:id="tbvOrdemServico" prefHeight="422.0" prefWidth="653.0">
+              <columns>
+                <TableColumn fx:id="tcIdOS" prefWidth="75.0" text="Cod." />
+                <TableColumn fx:id="tcDataOs" prefWidth="166.0" text="Data" />
+                  <TableColumn fx:id="tcValorOs" prefWidth="92.0" text="Valor" />
+                  <TableColumn fx:id="tcUsuarioOS" prefWidth="132.0" text="Usuario" />
+                  <TableColumn fx:id="tcVeicOs" prefWidth="187.0" text="Veiculo" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

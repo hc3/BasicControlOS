@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="achoInsertVeic" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TAddVeiculoCtrl">
+   <children>
+      <Pane fx:id="paneInsertVeic" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="txtNomeDono" layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="565.0" />
+            <Label layoutX="14.0" layoutY="89.0" text="Nome :" />
+            <Label layoutX="14.0" layoutY="151.0" text="Cpf :" />
+            <TextField fx:id="txtCpfDonoVeic" layoutX="14.0" layoutY="174.0" prefHeight="25.0" prefWidth="302.0" />
+            <Label layoutX="329.0" layoutY="151.0" text="Modelo" />
+            <TextField fx:id="txtModeloVeic" layoutX="329.0" layoutY="174.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField fx:id="txtCorVeic" layoutX="14.0" layoutY="237.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField fx:id="txtMarcaVeic" layoutX="329.0" layoutY="237.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label layoutX="14.0" layoutY="214.0" text="Cor :" />
+            <Label layoutX="329.0" layoutY="214.0" text="Marca" />
+            <TextField fx:id="txtPlacaVeic" layoutX="14.0" layoutY="298.0" prefHeight="25.0" prefWidth="124.0" />
+            <ComboBox fx:id="comboUfVeic" layoutX="329.0" layoutY="298.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label layoutX="14.0" layoutY="275.0" text="Placa :" />
+            <Label layoutX="165.0" layoutY="275.0" text="Ano :" />
+            <TextField fx:id="txtAnoVeic" layoutX="161.0" layoutY="298.0" prefHeight="25.0" prefWidth="97.0" />
+            <Button fx:id="btnCadVeic" layoutX="13.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnAddVeiculoAction" prefHeight="41.0" prefWidth="91.0" text="Cadastrar" />
+            <Button fx:id="btnSairVeic" layoutX="528.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnSairAddVeiculoAction" text="Sair" />
+            <Text layoutX="107.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inclusão de veiculos - Cadastro">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="199.0" layoutY="222.0" text="KM :" />
+            <TextField fx:id="txtKmVeiculo" layoutX="199.0" layoutY="237.0" prefHeight="25.0" prefWidth="116.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

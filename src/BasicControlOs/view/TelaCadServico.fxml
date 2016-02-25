@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="achorListServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TCadServicoCtrl">
+   <children>
+      <Pane fx:id="paneBtnServico" layoutX="8.0" layoutY="14.0" prefHeight="112.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <Button fx:id="btnCadServico" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#brtnCadServicoAction" prefHeight="97.0" prefWidth="98.0" text="Incluir" />
+            <Button fx:id="btnEditServico" layoutX="107.0" layoutY="7.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="98.0" text="Editar" />
+            <Button fx:id="btnDelServico" layoutX="211.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnExcluirServicoAction" prefHeight="97.0" prefWidth="98.0" text="Excluir" />
+            <Button fx:id="btnCadSairServ" layoutX="578.0" layoutY="5.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="sair" />
+            <TextField fx:id="txtBuscaServico" layoutX="353.0" layoutY="78.0" prefHeight="25.0" prefWidth="222.0" promptText="Digite sua busca" />
+            <Button fx:id="btnBuscaServico" layoutX="584.0" layoutY="78.0" mnemonicParsing="false" text="buscar" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneListServ" layoutX="8.0" layoutY="132.0" prefHeight="422.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <TableView fx:id="tbvServico" prefHeight="422.0" prefWidth="653.0">
+              <columns>
+                <TableColumn fx:id="tcIdServico" prefWidth="75.0" text="Cod." />
+                <TableColumn fx:id="tcDescServ" prefWidth="437.0" text="Descrição" />
+                  <TableColumn fx:id="tcValorServ" prefWidth="140.0" text="Valor" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

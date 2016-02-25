@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="achorListItem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TCadItemCtrl">
+   <children>
+      <Pane fx:id="paneBtnItem" layoutX="8.0" layoutY="14.0" prefHeight="112.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <Button fx:id="btnCadItem" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnShowDisplayAddItemAction" prefHeight="97.0" prefWidth="98.0" text="Incluir" />
+            <Button fx:id="btnEditItem" layoutX="107.0" layoutY="7.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="98.0" text="Editar" />
+            <Button fx:id="btnDelItem" layoutX="211.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnExcluirItemAction" prefHeight="97.0" prefWidth="98.0" text="Excluir" />
+            <Button fx:id="btnCadSairItem" layoutX="578.0" layoutY="5.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="sair" />
+            <TextField fx:id="txtBuscaItem" layoutX="353.0" layoutY="78.0" prefHeight="25.0" prefWidth="222.0" promptText="Digite sua busca" />
+            <Button fx:id="btnBuscaItem" layoutX="584.0" layoutY="78.0" mnemonicParsing="false" onAction="#btnSairTelaItem" text="buscar" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneListItem" layoutX="8.0" layoutY="132.0" prefHeight="422.0" prefWidth="653.0" style="-fx-border-color: black;">
+         <children>
+            <TableView fx:id="tbvItens" prefHeight="422.0" prefWidth="653.0">
+              <columns>
+                <TableColumn fx:id="tcCodItem" prefWidth="75.0" text="Codigo" />
+                <TableColumn fx:id="tcDescItem" prefWidth="271.0" text="Descrição" />
+                  <TableColumn fx:id="tcPrecoItem" prefWidth="101.0" text="Preço" />
+                  <TableColumn fx:id="tcQntItem" prefWidth="69.0" text="Qnt" />
+                  <TableColumn fx:id="tcMarcaItem" prefWidth="136.0" text="Marca" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

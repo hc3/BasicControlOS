@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="achoEditVeic" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicControlOs.view.TEditVeiculoCtrl">
+   <children>
+      <Pane fx:id="paneEditVeic" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="txtNomeDonoEdit" layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="565.0" />
+            <Label layoutX="14.0" layoutY="89.0" text="Nome :" />
+            <Label layoutX="14.0" layoutY="151.0" text="Cpf :" />
+            <TextField fx:id="txtCpfDonoVeicEdit" layoutX="14.0" layoutY="174.0" prefHeight="25.0" prefWidth="302.0" />
+            <Label layoutX="329.0" layoutY="151.0" text="Modelo" />
+            <TextField fx:id="txtModeloVeicEdit" layoutX="329.0" layoutY="174.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField fx:id="txtCorVeicEdit" layoutX="14.0" layoutY="237.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField fx:id="txtMarcaVeicEdit" layoutX="329.0" layoutY="237.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label layoutX="14.0" layoutY="214.0" text="Cor :" />
+            <Label layoutX="329.0" layoutY="214.0" text="Marca" />
+            <TextField fx:id="txtPlacaVeicEdit" layoutX="14.0" layoutY="298.0" prefHeight="25.0" prefWidth="124.0" />
+            <ComboBox fx:id="comboUfVeicEdit" layoutX="329.0" layoutY="298.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label layoutX="14.0" layoutY="275.0" text="Placa :" />
+            <Label layoutX="165.0" layoutY="275.0" text="Ano :" />
+            <TextField fx:id="txtAnoVeicEdit" layoutX="161.0" layoutY="298.0" prefHeight="25.0" prefWidth="97.0" />
+            <Button fx:id="btnCadVeicEdit" layoutX="13.0" layoutY="342.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" text="Editar" />
+            <Button fx:id="btnSairVeicEdit" layoutX="528.0" layoutY="359.0" mnemonicParsing="false" text="Sair" />
+            <Text layoutX="187.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edição de veiculos">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="199.0" layoutY="222.0" text="KM :" />
+            <TextField fx:id="txtKmVeiculoEdit" layoutX="199.0" layoutY="237.0" prefHeight="25.0" prefWidth="116.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
